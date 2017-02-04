@@ -1,6 +1,15 @@
+<%@val name:String%>
+
 <h3>Hello World!</h3>
 <hr/>
 <p>
+Hello ${name}!
 Your first Skinny app works!
 </p>
 
+<p>
+    <%@val list:List[Int]%>
+    #for (n <- list)
+        ${n}
+    #end
+</p>
